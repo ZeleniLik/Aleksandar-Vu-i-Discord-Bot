@@ -1,0 +1,32 @@
+{
+  "name": "Aleksandar Vučić",
+  "version": "2.3.5",
+  "description": "Aleksandar Vučić",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeleniLik/Aleksandar-Vu-i-Discord-Bot"
+  },
+  "author": "Zlik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZeleniLik/Aleksandar-Vu-i-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/ZeleniLik/Aleksandar-Vu-i-Discord-Bot/blob/master/readme.md",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "discord.js": "^11.3.2",
+    "enmap": "^2.0.4",
+    "enmap-level": "^2.0.2",
+    "moment": "^2.20.1",
+    "moment-duration-format": "^2.2.0",
+    "snekfetch": "^4.0.4"
+  }
+}
