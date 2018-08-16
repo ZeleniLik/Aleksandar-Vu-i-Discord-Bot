@@ -17,11 +17,12 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
 		else{
 			message.reply ("Role "+ key + " već postoji.");
 		}
+	}
 	if (settings.dugaEnabled==="true"){
 		var currentRole = message.guild.roles.find("name", "b_duga");
 		if(currentRole=== null){
 			message.guild.createRole({
-				name: b_duga,
+				name: "b_duga",
 				hoist:false,
 				mentionable: false,
 			}).catch(console.error);
@@ -31,7 +32,6 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
 			message.reply("Role b_duga već postoji.");
 		}
 	};
-	}
   }
   else{
 	message.reply("Ova komanda nije dostupna na ovom serveru. Uključi je tako što ćeš poslati komandu **prefix set edit bojeEnabled true**");
