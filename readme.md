@@ -10,7 +10,6 @@ features:
 
 -**Ovaj readme**
 
--duga
 
 -twitter integration
 
