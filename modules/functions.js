@@ -22,6 +22,46 @@ module.exports = (client) => {
     }
     return permlvl;
   };
+  
+  //rainbow colors
+
+	const rainbow = new Array(15);
+
+	for (var i=0; i<15; i++) {
+		var red   = sin_to_hex(i, 0 * Math.PI * 2/3); // 0   deg
+		var blue  = sin_to_hex(i, 1 * Math.PI * 2/3); // 120 deg
+		var green = sin_to_hex(i, 2 * Math.PI * 2/3); // 240 deg
+
+		rainbow[i] = '#'+ red + green + blue;
+	}
+
+	function sin_to_hex(i, phase) {
+		var sin = Math.sin(Math.PI / 15 * 2 * i + phase);
+		var int = Math.floor(sin * 127) + 128;
+		var hex = int.toString(16);
+
+		return hex.length === 1 ? '0'+hex : hex;
+	}
+
+	let place = 0;
+
+	client.changeColor = () => {	
+	
+		client.guilds.forEach( guild => {
+			console.log("guild "+guild);
+			if (guild.roles.find ("name", "b_duga")!= null){
+				guild.roles.find('name', "b_duga").setColor(rainbow[place])
+				.catch(console.error);
+				console.log("color change");
+			}
+		});		
+
+		if(place == (15 - 1)){
+			place = 0;
+		}else{
+			place++;
+		}
+	}
 
   /*
   GUILD SETTINGS FUNCTION
@@ -39,6 +79,7 @@ module.exports = (client) => {
     }
     return returns;
   };
+  
 
   /*
   SINGLE-LINE AWAITMESSAGE
