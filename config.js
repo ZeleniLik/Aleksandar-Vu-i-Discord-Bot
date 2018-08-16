@@ -38,21 +38,21 @@ const config = {
   },
   
   "colorSettings" : {
-	  "b_tamno_plava":"003366",
-	  "b_svetlo_plava":"77c3c3",
-	  "b_crvena":"db3328",
-	  "b_tamno_zelena":"228b22",
-	  "b_svetlo_zelena":"7cc576",
-	  "b_narandzasta":"ff6700",
-	  "b_ljubicasta":"9852a8",
-	  "b_svetlo_zelena":"7cc576",
-	  "b_zuta":"ffe200",
-	  "b_pink":"ff288d",
-	  "b_crna":"1a1a1a",
-	  "b_zlatna":"ffbf00",
-	  "b_zelena":"00ff00",
-	  "b_tamno_crvena":"740001",
-	  "b_svetlo_zelena":"74d680"
+	"b_tamno_plava":"020837",
+	"b_svetlo_plava":"77c3c3",
+	"b_crvena":"db3328",
+	"b_tamno_zelena":"228b22",
+	"b_svetlo_zelena":"7cc576",
+	"b_narandzasta":"ff6700",
+	"b_ljubicasta":"9852a8",
+	"b_svetlo_zelena":"7cc576",
+	"b_zuta":"ffe200",
+	"b_pink":"ff288d",
+	"b_crna":"050505",
+	"b_zlatna":"ffbf00",
+	"b_zelena":"00ff00",
+	"b_tamno_crvena":"740001",
+	"b_svetlo_zelena":"74d680"
   },
 
   // PERMISSION LEVEL DEFINITIONS.
