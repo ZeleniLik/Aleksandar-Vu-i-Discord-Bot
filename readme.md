@@ -20,8 +20,3 @@ to fix:
 
 -gif komanda
 
-to test:
-
--multiple prefixes
-
--invite permissions
