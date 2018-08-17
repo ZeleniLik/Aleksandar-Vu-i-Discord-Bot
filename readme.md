@@ -8,6 +8,8 @@ komande:
 
 features:
 
+response objects
+
 -**Ovaj readme**
 
 
